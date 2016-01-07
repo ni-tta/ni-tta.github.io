@@ -1,9 +1,298 @@
----
-layout: default
-title: ni-tta
----
-<div class="blurb">
-	<h1>Catherine Nitta</h1>
-	<p><p>I'm a second year undergraduate at <a href="http://www.berkeley.edu/"><em>UC Berkeley</em></a> majoring in cognitive science. <a href="/about">Read more...</a></p>
-</div><!-- /.blurb -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Catherine Nitta</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+		<!-- Navigation script -->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+</head>
+<body>
+		<div id="home" class="header scroll">
+			<div class="container">
+				<!-- Navigation Menu -->
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">HOME</a></li>
+						<li class="page-scroll"><a href="#abt" class="scroll">ABOUT</a></li>
+						<li class="page-scroll"><a href="#exp" class="scroll">EXPERIENCE</a></li>
+						<li class="page-scroll"><a href="#port" class="scroll">PROJECTS</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"> </div>
+				<div class="slide-text text-center">
+					<h1><img src="images/whiteweblogo.png" title="Cat Nitta" /></h1>
+					<span>CATHERINE NITTA</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- About -->
+		<div id="abt" class="about">
+			<div class="container">
+				<h3> ABOUT</h3>
+					<p>I'm a second year cognitive science major at UC Berkeley. I'm interested in the power of coding, whether it be through designing products, teaching computer science, or <a href="http://gunnoracle.com/2012/12/10/students-reach-semi-finals-in-siemens-national-science-competition/">applications of code to other disciplines</a>. Among other things, I am a <a href="http://throughtheeyesofcat.github.io">casual photographer</a> and <a href="http://instagram.com/onekitcat">Instagrammer</a>. I also play cello, and belong to a group called <a href="http://celli.berkeley.edu">Celli@Berkeley</a>. In addition, I can read, write, and speak in Japanese. In my spare time, I like to read, swim, rock climb, cook, and write (code and non-code). </p>
+					</br> <p> Here are my skills: </p>
+					<div class="features-grids text-center">
+					<div class="col-md-3 skills">
+						<img src="images/frontend.png"/>
+						<h3>FRONT-END</h3>
+					</div>
+					<div class="col-md-3 skills">
+						<img src="images/prog.png"/>
+						<h3>OTHER PROGRAMMING</h3>
+					</div>
+					<div class="col-md-3 skills">
+						<img src="images/cc.png"/>
+						<h3>ADOBE CREATIVE SUITE</h3>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Experience -->
+		<div id="exp" class="experience">
+			<div class="container">
+					<h3><span> </span> EXPERIENCE</h3>
+					<h2><span>STUDENT WEB APP DEVELOPER - BOALT SCHOOL OF LAW</span></h2>
+					<p>March 2015 - Present</p> 
+					<p> Worked on an a small web app that grabs articles from the web mentioning “strings of interest” (law school professors)</p>
+					<ul> ➢ used PHP, HTML, CSS, and JavaScript</ul>
+					<ul>➢ added an addition/deletion feature in the search menu</ul>
+					<ul>➢ improved the user interface by creating a unified HTML/CSS menu for all the scripts </ul> 
+					<ul>➢ created a script to automatically format search results into a blog format</ul>
+				</br>
+					<h2><span> ACADEMIC INTERN/LAB ASSISTANT - UC BERKELEY, CS61A </span></h2>
+					<p>June 2015 - Present</p> 
+					<ul> ➢ Answered student’s questions about concepts for UC Berkeley’s introductory CS course</ul>
+					<ul>➢ Worked as a tutor to go over concepts with a student one-on-one (June 2015 - August 2015)</ul>
+				</br> 
+					<h2><span> JUNIOR MENTOR - COMPUTER SCIENCE MENTORS (CSM) </span> </h2>
+					<p> September 2015 - Present </p>
+					<ul>➢ provided group tutoring for four CS61A students in a one hour session every week</ul>
+					<ul>➢ received guidance and tips for teaching from two more experienced members</ul>
+			</div>
+		</div> 
+
+		<!-- Projects (Portfolio) -->
+		<div id="port" class="portfolio portfolio-box">
+				<div class="head text-center">
+					<h3><span> </span> PROJECTS</h3>
+				</div>
+<div class="portfolios">
+	  <div class="portfolio-info">
+	<div class="container">
+			<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default',            
+			            width: 'auto', 
+			            fit: true   
+			        });
+			    });
+				
+			</script>
+				<div class="sap_tabs">
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						  <ul class="resp-tabs-list">
+						  	  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Personal Projects</span></li>
+							  <!-- <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Class Projects</span></li> 
+							  // figure out how to present class projects in a style that matches other projects... -->
+							   <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Other Projects</span></li>
+						  </ul>				  	 
+						<div class="resp-tabs-container">
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+								<div class="tab_img">
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="images/personal.png" class="img-responsive" alt=""/>
+												 <div class="link-top">							
+								     				<h3>ni-tta.github.io (this website)</h3>
+								     				<span><a href = "">Github</a> | <a href="http://ni-tta.github.io">Website</a></span>
+												 </div>
+										</div>
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="images/photo.png" class="img-responsive" alt=""/>
+												 <div class="link-top">										
+								     				<h3>Personal Photography Portfolio</h3>
+								     				<span><a href = "">Github</a> | <a href="http://throughtheeyesofcat.github.io">Website</a> </span>
+												 </div>
+										</div>
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="images/port_logo.png" class="img-responsive" alt=""/>
+												 <div class="link-top">										
+								     				<h3>Personal Logo</h3>
+								     				<span><a href="personal_logo.html">Design Process</a></span>
+												 </div>
+										</div>
+										
+																																		
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="images/oppia.png" class="img-responsive" alt=""/>
+												 <div class="link-top">							
+								     				<h3>Mobile Design of Oppia</h3>
+								     				<span><a href="oppia.html">Design Process</a></span>
+												 </div>
+										</div>
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="" class="img-responsive" alt=""/>
+												 <div class="link-top">										
+								     				<h3>Yelp Project (CS61A)</h3>
+								     				<span>figure this out </span>
+												 </div>
+										</div>
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="" class="img-responsive" alt=""/>
+												 <div class="link-top">										
+								     				<h3>CS61A Project -- Scheme project?</h3>
+								     				<span>figure this out too</span>
+												 </div>
+										</div>
+											
+							    
+									    <div class="col-md-4 img-top ">
+					   		  			   	<img src="" class="img-responsive" alt=""/>
+												 <div class="link-top">										
+								     				<h3>61B Project</h3>
+								     				<span>Probably Project 3</span>
+												 </div>
+										</div>
+										
+							    </div>
+									 	        					 
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+							    <div class="tab_img">
+									    <div class="col-md-4 img-top ">
+					   		  			   	<img src="images/personal.png" class="img-responsive" alt=""/>
+												 <div class="link-top">							
+								     				<h3>ni-tta.github.io (this website)</h3>
+								     				<span><a href = "">Github</a> | <a href="http://ni-tta.github.io">Website</a></span>
+												 </div>							
+												 </div>
+										</div>
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="images/photo.png" class="img-responsive" alt=""/>
+												 <div class="link-top">									<h3>Personal Photography Portfolio</h3>
+								     				 <span><a href = "">Github</a> | <a href="http://throughtheeyesofcat.github.io">Website</a></span>
+												 </div>
+										</div>
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="images/port_logo.png" class="img-responsive" alt=""/>
+												 <div class="link-top">								   <h3>Personal Logo</h3>
+								     				<span><a href="personal_logo.html">Design Process</a></span>
+												 </div>
+										</div>
+										<div class="clear"></div>	
+							    </div>	 	        					 
+						    </div>
+						    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+								
+								<div class="tab_img">
+									    <div class="col-md-4 img-top ">
+					   		  			   	<img src="images/oppia.png" class="img-responsive" alt=""/>
+												 <div class="link-top">	
+												 	<h3>Mobile Design of Oppia</h3>
+								     				<span><a href="oppia.html">Design Process</a></span>							
+												 </div>
+										</div>
+											<div class="clearfix"></div>
+								</div>		        					 
+						    </div>
+						    <!-- Class Projects, if I ever figure out how to present that part.
+						    <div class="resp-tabs-container">
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+								<div class="tab_img">
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="" class="img-responsive" alt=""/>
+												 <div class="link-top">										
+								     				<h3>Yelp Project (CS61A)</h3>
+								     				<span>figure this out </span>
+												 </div>
+										</div>
+										<div class="col-md-4 img-top ">
+					   		  			   	<img src="" class="img-responsive" alt=""/>
+												 <div class="link-top">										
+								     				<h3>CS61A Project - Scheme project?</h3>
+								     				<span>figure this out too</span>
+												 </div>
+										</div>
+											
+							    
+									    <div class="col-md-4 img-top ">
+					   		  			   	<img src="" class="img-responsive" alt=""/>
+												 <div class="link-top">										
+								     				<h3>61B Project</h3>
+								     				<span>Probably Project 3</span>
+												 </div>
+										</div>
+										
+							    </div> -->
+
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+		<!-- Footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-left">
+					<p>Copyright &copy; 2016 Catherine Nitta</p>
+				</div>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+	</body>
+</html>
 
