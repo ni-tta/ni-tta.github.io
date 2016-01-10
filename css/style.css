@@ -169,7 +169,9 @@ nav a#pull {
 }
 
 /* About */
-
+.about{
+	padding:5em 0;
+}
 
 .about h3 {
 	color: #000;
