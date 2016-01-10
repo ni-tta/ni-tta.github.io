@@ -125,6 +125,68 @@ nav a#pull {
 		padding: 0em 0;
 	}
 }
+
+.social{
+	text-align: center;
+	padding: 0em 0;
+}
+
+/*ul.social {
+   display:block;
+   list-style:none;
+}
+
+ul.social li{
+    display:block;
+    float:left;
+    position:relative;
+    margin:0 5px 5px 0;
+}
+
+ul.social li a{
+    display:block;
+    width:32px;
+    height:32px;
+    background-position:0 0;
+}
+
+ul.social li a.mail{
+    display:block;
+    background-position:0 0;
+    background-image:url('images/mail.png');
+}
+
+ul.social li a.mail:hover{
+    display:block;
+    background-position:0 0;
+    background-image:url('images/mail_hover.png');
+}
+
+ul.social li a.fb{
+    display:block;
+    background-position:-32px 0;
+    background-image:url('images/fb.png');
+}
+
+ul.social li a.fb:hover{
+    display:block;
+    background-position:-32px 0;
+    background-image:url('images/fb_hover.png');
+}
+
+ul.social li a.insta{
+    display:block;
+    background-position:-64px 0;
+    background-image:url('images/insta.png');
+}
+
+ul.social li a.insta:hover{
+    display:block;
+    background-position:-64px 0;
+    background-image:url('images/insta_hover.png');
+}
+*/
+
 /*Smartphone*/
 @media only screen and (max-width : 320px) {
 	nav li {
@@ -574,7 +636,7 @@ a:focus {
 	display:inline-block;
 }
 .footer-left p{
-	color: #FFF;
+	color: #FFFFFF;
 	margin:0.8em 0 0;
 }
 .footer-left p a{
