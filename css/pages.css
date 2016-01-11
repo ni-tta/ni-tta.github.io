@@ -1,0 +1,31 @@
+h1{
+	text-align: center;
+}
+p{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+img.portrait{
+	height:200px;
+	width:auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img.small{
+	height: 100px;
+	width:auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+a{
+	color:#30d1ce;
+	text-decoration: none;
+}
+a:hover{
+	color:#000000;	
+	text-decoration: none;
+}
