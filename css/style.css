@@ -558,19 +558,31 @@ h2.resp-accordion {
     color: #fff;
 }
 .link-top h3{
-	font-size: 13px;
+	font-size: 20px;
 	color:#000;
-	margin: 0;
+	margin-left: 5px;
+	margin-right: 20px;
+	text-align: center;
 }
 .link-top p{
 	font-size: 13px;
 	color:#000;
+	margin-left: 0px;
+	margin-right:5px;
 	
 }
 .link-top a{
 	color:#fff;
 	text-decoration:none;
+
 }
+/*.link-top span {
+	color:#fff;
+	text-decoration:none;
+	margin-left: 5px;
+	margin-right: 20px;
+	text-align: center;
+}*/
 .link-top a:hover,
 a:focus {
   color: #000;
