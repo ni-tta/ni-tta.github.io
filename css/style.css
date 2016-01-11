@@ -564,6 +564,12 @@ h2.resp-accordion {
 	margin-right: 20px;
 	text-align: center;
 }
+
+.link-top h2{
+	font-size:20px;
+	color:#FFF;
+	text-align: center;
+}
 .link-top p{
 	font-size: 13px;
 	color:#000;
@@ -574,6 +580,7 @@ h2.resp-accordion {
 .link-top a{
 	color:#fff;
 	text-decoration:none;
+	text-align: center;
 
 }
 /*.link-top span {
@@ -587,11 +594,13 @@ h2.resp-accordion {
 a:focus {
   color: #000;
   text-decoration: none;
+  text-align: center;
 }
 .link-top a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+  text-align: center;
 }
 
  i.link {
