@@ -5,25 +5,33 @@ p{
 	padding-left: 40px;
 	padding-right: 40px;
 }
-div.pictures{
+#pictures{
 	display:inline-block;
-	left:50%;
-	right:50%;
-}
-img.portrait{
-	height:200px;
-	width:auto;
-	display: block;
-    margin-left: 5px;
-    margin-right: 5px;
+	vertical-align: middle;
+	position:relative;
+	/*margin:auto;*/
 }
 
-img.small{
+p.images{
+    display:block;
+    width:100%;
+    text-align:center
+}
+p img{
+    display:inline-block;
+}
+
+img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p img.small{
 	height: 100px;
 	width:auto;
 	display: block;
-    margin-left: auto;
-    margin-right: auto
+	vertical-align: middle;
 }
 
 a{
