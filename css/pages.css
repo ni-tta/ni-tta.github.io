@@ -5,12 +5,17 @@ p{
 	padding-left: 40px;
 	padding-right: 40px;
 }
+div.pictures{
+	display:inline-block;
+	left:50%;
+	right:50%;
+}
 img.portrait{
 	height:200px;
 	width:auto;
 	display: block;
-    margin-left: auto;
-    margin-right: auto
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 img.small{
