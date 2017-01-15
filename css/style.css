@@ -11,12 +11,13 @@ body a{
 }
 /* Header */
 .header{
+	background-color:#fff;
 	background-size:100% 100%;
 	min-height:700px;
 }
 /* navbar */
 .top-nav ul li a{
-	color: #000;
+	color: #555a5a;
 	padding: 0.1em 1em;
 	font-size: 1.2em;
 	font-weight: 500;
@@ -232,18 +233,17 @@ ul.social li a.insta:hover{
 /* About */
 .about{
 	padding:5em 0;
-	color:#fff;
-	background: #000;
+	background:#555a5a;
 }
 
 .about h3 {
-	/*color: #fff;*/
+	color: #fff;
 	font-size: 2em;
 	font-weight: 700;
 }
-/*.about p {
-	color: #000;
-}*/
+.about p {
+	color: #fff;
+}
 
 .about a {
 	color: #30d1ce;
@@ -306,7 +306,7 @@ a:focus {
 		display: inline-block;
 		padding: 10px 15px;
 		text-decoration: none;
-		color: #000000;
+		color: #555a5a;
 		cursor: pointer;
 		font-size: 1em;
 	}
@@ -321,7 +321,7 @@ a:focus {
 		display:none;
 		float:left;
 		overflow:hidden;
-		background: #000000;
+		/*background: #000000;*/
 	}	
 	.portfolio-wrapper {
 		overflow: hidden;
@@ -654,7 +654,7 @@ a:focus {
 }
 /* Footer */
 .footer{
-	background:#21282A;
+	background:#555a5a;
 }
 .footer-left{
 	text-align:center;
@@ -705,9 +705,6 @@ a:focus {
 }
 /* responsiveness */
 @media (max-width:1366px){
-	.blog-post-time-line-connector span {
-		left: 9%;
-	}
 	.port-grid-text {
 		min-height: 217px;
 	}
@@ -715,9 +712,6 @@ a:focus {
 @media (max-width:1024px){
 	.top-nav ul li a {
 		font-size: 1em;
-	}
-	.blog-post-time-line-connector span {
-		left:12%;
 	}
 	.header {
 		min-height:500px;
@@ -735,16 +729,7 @@ a:focus {
 	.slide-text {
 		margin-top:3em;
 	}
-	.work-map {
-		width: 672px;
-		height: 237px;
-		background: url(../images/work-map.png) no-repeat 0px 0px;
-		display: inline-block;
-		position: absolute;
-		top: 0px;
-		left: 10%;
-		background-size: 100%;
-	}
+	
 	.col-md-7 {
 		width: 50.333333%;
 	}
