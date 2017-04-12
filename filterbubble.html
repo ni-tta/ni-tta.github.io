@@ -1,0 +1,95 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Facebook News 2.0</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<link href="css/pages.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="shortcut icon" href="images/favi.png" type="image/x-icon">
+<link rel="icon" href="images/favi.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+		<!-- Navigation script -->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+</head>
+<body>
+	<h1>Facebook News 2.0: Breaking the Filter Bubble</h1>
+	<p><b>The Problem:</b> With the results of the 2016 Election, it became painfully clear that people across the nation see different information about the same topic. This is mainly due to advertising targetting people based on their likes, as well as people mostly talking to similar-minded people.</p>
+	<p><b>Research Methods:</b> Immersive secondary research (i.e. news articles)</p> 
+	<p><b>Solution:</b> A Facebook feature which matches people with many similarities but a few distinct differences in their ideology. The similarities allow people to build rapport with each other, while the differences help the matched people learn something new. Matched people share and discuss news articles with those they are matched with, and curate news for them. </p>
+	<br />
+	<p class="images"><img src="fb/w1.png" height="284 px" width="160px"/>
+		<img src="fb/w2.png" height="284 px" width="160px"/>
+		<img src="fb/w3.png" height="284 px" width="160px"/>
+		<img src="fb/w4.png" height="284 px" width="160px"/>
+		<img src="fb/w5.png" height="284 px" width="160px"/>
+
+	</p>
+	<br />
+
+	<p class="images"><img src="fb/w6.png" height="284 px" width="160px"/>
+		<img src="fb/w7.png" height="284 px" width="160px"/>
+		<img src="fb/w8.png" height="284 px" width="160px"/>
+		<img src="fb/w9.png" height="284 px" width="160px"/>
+		<img src="fb/w10.png" height="284 px" width="160px"/>
+
+	</p>
+
+	<br />
+
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-left">
+					<p>Copyright &copy; 2016 Catherine Nitta</p> <br>
+					<p><a href="index.html">Return to webpage</a> </p>
+				</div>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+	</body>
+</html>
+
