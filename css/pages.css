@@ -16,6 +16,16 @@ p{
 	/*margin:auto;*/
 }
 
+#wireframes{
+	border:solid black 2px;
+}
+
+.container{
+padding-left: 10%;
+padding-right:10%;
+vertical-align: middle;
+}
+
 p.images{
     display:block;
     width:100%;
@@ -36,6 +46,32 @@ p img.small{
 	width:auto;
 	display: block;
 	vertical-align: middle;
+}
+
+ul{
+	padding-left: 20%;
+	padding-right: 15%;
+	
+}
+li{
+	color:#000;
+
+}
+
+figure{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top: 10px;
+	display:inline-block;
+	vertical-align: middle;
+	position:relative;
+}
+figcaption{
+	/*padding-left: 15%;
+	padding-right:15%;*/
+	padding-top:5%;
+	width:160px;
+	font-size: 75%;
 }
 
 a{
