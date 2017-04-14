@@ -48,9 +48,10 @@ p img.small{
 	vertical-align: middle;
 }
 
-ul{
+.page{
 	padding-left: 20%;
 	padding-right: 15%;
+	color:#000;
 	
 }
 li{
