@@ -59,6 +59,11 @@ li{
 
 }
 
+.storyboard_container{
+	padding-left:20%;
+	padding-right:20%;
+}
+
 figure{
 	padding-left:10px;
 	padding-right:5px;
@@ -80,10 +85,6 @@ figcaption{
 	width:145px;
 }
 
-.storyboard_container{
-	padding-left:20%;
-	padding-right:20%;
-}
 
 a{
 	color:#30d1ce;
