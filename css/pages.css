@@ -76,6 +76,15 @@ figcaption{
 	font-size: 75%;
 }
 
+.storyboard{
+	width:145px;
+}
+
+.storyboard_container{
+	padding-left:20%;
+	padding-right:20%;
+}
+
 a{
 	color:#30d1ce;
 	text-decoration: none;
