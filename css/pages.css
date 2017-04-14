@@ -9,6 +9,13 @@ p{
 	padding-left: 15%;
 	padding-right: 15%;
 }
+
+.pcontainer{
+	padding-left: 10%;
+	padding-right: 10%;
+/*	text-align: center;*/
+}
+
 #pictures{
 	display:inline-block;
 	vertical-align: middle;
@@ -60,8 +67,8 @@ li{
 }
 
 .storyboard_container{
-	padding-left:20%;
-	padding-right:20%;
+	padding-left:5%;
+	padding-right:5%;
 }
 
 figure{
