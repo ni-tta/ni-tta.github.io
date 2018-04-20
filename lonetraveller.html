@@ -1,173 +1,90 @@
-
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>Designing for the Lone Traveller</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-<link href="css/pages.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link rel="shortcut icon" href="images/favi.jpg" type="image/x-icon">
-<link rel="icon" href="images/favi.jpg" type="image/x-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-</script>
+	<head>
+		<title>WhisperGuide: Audio Travel Guide</title>
 
-<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-		<!-- Navigation script -->
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-		</script>
-</head>
-<body>
-<div class="pcontainer">
-	<h1>Designing For the Lone Traveller</h1>
-	<p> <b>Design Question: </b>How might we make travelling abroad easier for the young lone traveller?</p>
-<div class="storyboard_container">
-<figure>
-  <img src="travel/r1.jpg" alt="The Pulpit Rock" width="145" height="110" id="wireframes">
-  <figcaption class="storyboard">1. Traveller is utterly and completely lost. </figcaption>
-</figure>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="images/favi.png" type="image/x-icon">
+		<link rel="icon" href="images/favi.png" type="image/x-icon">
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+	</head>
 
-<figure>
-  <img src="travel/r2.jpg" alt="The Pulpit Rock" width="145" height="110" id="wireframes">
-  <figcaption class="storyboard">2. But wait! The traveller has this voice guide.</figcaption>
-</figure>
-
-<figure>
-  <img src="travel/r3.jpg" alt="The Pulpit Rock" width="145" height="110" id="wireframes">
-  <figcaption class="storyboard">3. The voice guide is downloaded beforehand.</figcaption>
-</figure>
-
-<figure>
-  <img src="travel/r4.jpg" alt="The Pulpit Rock" width="145" height="110" id="wireframes">
-  <figcaption class="storyboard">4. The voice guide gives directions. </figcaption>
-</figure>
-<br />
-
-<figure>
-  <img src="travel/r5.jpg" alt="The Pulpit Rock" width="145" height="110" id="wireframes">
-  <figcaption class="storyboard">5. It also includes points of interest en route. </figcaption>
-</figure>
-
-<figure>
-  <img src="travel/r6.jpg" alt="The Pulpit Rock" width="145" height="110" id="wireframes">
-  <figcaption class="storyboard">6. It will also have restaurant suggestions. </figcaption>
-</figure>
-
-<figure>
-  <img src="travel/r7.jpg" alt="The Pulpit Rock" width="145" height="110" id="wireframes">
-  <figcaption class="storyboard">7. The traveller can select different routes. </figcaption>
-</figure>
-
-
-</div>
-<br />
-
-	<p> <b>Share of Work:</b> one interview, one design concept
-	<p> <b>Research Methods: </b>Interviews to determine scope of design question</p>
-	<p> <b>Participant Group: </b>Students who mostly travel alone, including</p>
-	<ul class="page">
-		<li>IL, 20 year old female who studied abroad in the UK</li>
-		<li>AZ, 22 year old female who went sightseeing in Turkey on her own </li>
-		<li>BC, 21 year old male, international student at Rutgers</li>
-	</ul>
-	<p><b>Informed Opportunities for Design:</b></p> 
-	<ul class="page"> <b>1. Facilitating the sharing of customs</b>
-		<br /><i>Young travellers want to prepare for local customs, and like when locals explain the customs to them. </i><br />
-		"I thought TV shows would prepare me for customs, but they didn't." - IL <br />
-		"I wish I knew someone who could have taught me [custom]" - AZ
-	</ul>
-	<ul class="page"> <b>2. Spontaneous plan generation</b>
-	<br /> <i>Young people dislike planning while traveling, but see it as necessary.</i>
-	<br />
-	"I had to prepare or else I would be totally lost" - AZ <br />
-	"Preparing is boring and takes a lot of time" - BC <br />
-	"Planning is a boring but necessary evil" - IL <br />
-	</ul>
-	<ul class="page"> <b>3. Accessibility of data</b>
-		<br /> <i>Young travelers often seek out public wifi, and are limited by accessibility to the Internet. </i> 
-		<br /> "I would specifically seek out places with open wifi networks and revisited those places" - AZ
-	</ul>
-	<ul class="page"> <b>4. Finding travelers who speak the same language</b>
-		<br /> <i>Young travelers want to meet other people to travel with, but can be difficult with language barriers.</i><br />
-		"I only travel alone in countries where I know the language" - IL<br />
-		"Language has been a barrier for me in making friends abroad" - BC<br />
-		"I wish I could find English speakers while abroad" - AZ<br />
-	</ul>
-	<ul class="page"> <b>5. Finding others to dine with</b>
-		<br /> <i>Young travelers prefer to eat with others.</i><br />
-		"Eating alone is boring" - IL<br />
-		"You can't try a variety of foods when alone" - BC<br />
-		"Eating is supposed to be social" - AZ<br />
-	</ul>
-
-	<p><b>Design Concepts:</b></p>
-	<ul class="page"><b>1. Voice Guide: A tour guide in your pocket (own idea, as illustrated above)</b> 
-		<br /> An app which would allow voice directions to be downloaded onto the traveller's phone beforehand. It features routes that involve the whole experience (i.e. which restaurants are good, points of interest). The routes would be crowd sourced by allowing users to rate routes, update the availability of points of interests. There would possibly be an area where users are able to share their own experience with using certain routes. 
-		<br/ > <i>Opportunties: Accessibility of data, spontaneous plan generation, sharing customs </i>
-	</ul> 
-
-	<ul class="page"><b>2. Data AR: Explore and collect data, Pokemon Go style</b> <br />
-		An app which allows the traveller to collect data by going to certain monuments/places of interest. The traveller earns data bonuses for going to certain groups of monuments. 
-		<br /><i>Opportunities: Accessibility of data, spontaneous plan generation</i>
-	</ul>
-	<ul class="page"><b>3. Arrival Package: A travel care package</b> <br />
-		A service that provides a package that comes with essentials, key to booked hotel, travel tickets, etc. Also comes with a local guide who will explain customs. 
-		<br /><i>Opportunities: Spontaneous plan generation, sharing customs</i>
-	</ul>
-	<ul class="page"><b>4. Match-up Pre- or live match-up (idea formed in a group meeting)</b>
-		<br />
-		An app which would notify the traveller when they are close to people who match what they want. This would be based on a "pre check-in" where the traveller posts what they want to do (i.e. eat with another person) at a location before getting there. 
-		<br/ > <i>Opportunities: Finding similar travelers, finding others to dine with</i>
-	</ul>
-</div>
-	<br />
-		<!-- Footer -->
-		<div class="footer">
-			<div class="container">
-				<div class="footer-left">
-					<p>Copyright &copy; 2016 Catherine Nitta</p> <br>
-					<p><a href="index.html">Return to webpage</a> </p>
-				</div>
-				<script type="text/javascript">
-				$(document).ready(function() {
-					
-					$().UItoTop({ easingType: 'easeOutQuart' });
-					
-				});
-			</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-			</div>
+	<body>
+	<div class="container">	
+		<div class="header">
+			<h1><a href="index.html">Catherine Nitta</a></h1>
+			<ul><li> About</li> </ul>
 		</div>
+		<div class="page">
+			<h1>WhisperGuide</h1>
+			<h2>Introduction</h2>
+			<p>Whenever I travel outside of the country, I navigate without use of a smartphone to save on data costs. Unfortunately, the combination of unfamiliarity and my bad sense of direction means that I often get lost. Naturally, this made me interested in designing for such a situation. WhisperGuide is a prototype app that helps travellers navigate offline by providing downloadable maps and tours, as well as social features for when travellers get back online. I worked with two other designers during the user research and brainstorming stages, and then delved deeper into one of my design concepts. 
+			</p>
+			<h2>Framing the Problem</h2>
+			<p>Though I touched on how I get lost when travelling abroad, that is just one aspect of travel. Other people may or may not have the same problem. For example, my teammates described safety issues, boredom, and social stigma against those who travel alone. So we decided to generalize and focus on this question: <b>How can young people have a better experience when travelling alone?</b></p>
+
+			<h2>User Research</h2>
+			<p>We defined "young people" as individuals 20-30 years old, who are more likely to be financially able and responsible enough to travel alone. We created a script to guide our interviews. Some of the questions we asked include asking users to describe their travel background, i.e. where they’ve travelled, if they knew the language, how often they’ve travelled, and whether the travel was on their own. We also asked what they liked and disliked about their experience, how they plan, as well as what apps and tools they use for travel. </p>
+
+			<p>Based on our user research, a typical user:
+				<ul>
+					<li>Wants to prepare for local customs, but finds it hard. One interviewee said that in particular, she would like if locals could explain the customs to her. </li>
+					<li>Dislikes planning for travel, but sees it as necessary</li>
+					<li>Seeks out public wifi, and is limited by accessibility to the Internet</li>
+					<li>Wants to meet other people to travel with, but finds it difficult due to language barriers</li>
+					<li>Prefers eating with others </li>
+				</ul>
+			</p>
+
+			<h2>Ideation</h2>
+			<p>After our user research, we jumped straight in to brainstorming. We wrote down key points from each of our interviews on individual Post-It Notes and grouped the Post-Its into categories. The colors indicate different teammates -- my color was yellow.
+			</p>
+			<img src="images/lt_brain1.jpg">
+			<br />
+			<img src="images/lt_brain2.jpg">
+			<p> We ended up with six categories, which include:
+				<ul>
+					<li>Technology/wifi: difficulties with limited access to wifi</li>
+					<li>Meeting new people: desire to meet others</li>
+					<li>Planning: frustrations with the process</li>
+					<li>Customs: wanting to know more about the country</li>
+					<li>Accomodations: finding places to stay </li>
+					<li>Being alone: dislikes being alone</li>
+				</ul>
+			</p>
+
+			<p>Using these categories as a guide, we brainstormed some ideas. We each voted for our top 3 choices. </p>
+				<img src="images/lt_ideas.jpg">
+
+			<p>Our top ideas, which we then separately created design assets for, are as follows:
+				</p>
+				<p><b>1. Data AR: Explore and collect data, Pokemon Go style </b><br/>
+				An app which allows the traveller to collect data by going to certain monuments/places of interest. The traveller earns data bonuses for going to certain groups of monuments. <br />
+				User needs addressed: Accessibility of data, spontaneous plan generation</p>
+				<p>2. Voice Guide: A tour guide in your pocket (the idea I worked on, as illustrated above) <br />
+				An app which would allow voice directions to be downloaded onto the traveller's phone beforehand. It features routes that involve the whole experience (i.e. which restaurants are good, points of interest). <br />
+				User needs addressed: Accessibility of data, spontaneous plan generation, sharing customs</p>
+				<p>3. Arrival Package: A travel care package <br />
+				A service that provides a package that comes with essentials, key to booked hotel, travel tickets, etc. Also comes with a local guide who will explain customs. <br />
+				User needs addressed: Spontaneous plan generation, sharing customs
+				</p>
+				<p>
+				4. Match-up Pre- or live match-up  <br />
+				An app which would notify the traveller when they are close to people who match what they want. This would be based on a "pre check-in" where the traveller posts what they want to do (i.e. eat with another person) at a location before getting there. <br />
+				User needs addressed: Finding similar travelers, finding others to dine with</p>
+			</p>
+
+			<h2>Concept Sketches</h2>
+			<p>Here are my initial sketches for the audio travel guide. 
+			</p>
+			<img src="images/lt_iasketch.png">
+
+			<h2>Wireframes</h2>
+			<p>After working on my concept sketch, I got some feedback on the design. I found out that there are actually similar apps in existence: <a href="https://www.detour.com/">Detour</a>, <a href="https://tripscout.co/">TripScout</a>, and <a href="http://pocketguideapp.com/">PocketGuide</a> seem to be the main ones. After downloading and trying out the apps, I noted the lack of social component beyond the ability to share on Facebook or rate tours, especially because everyone in our user group mentioned that they didn't like being alone and would like to meet new people when traveling. As a result, for the next stage, I decided to add these features: rating tours, user-created tours, and sharing photos and experiences of tours. </p>
+		</div>
+	</div>
 	</body>
 </html>
-

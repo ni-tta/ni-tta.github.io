@@ -1,105 +1,58 @@
 
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>VRoom</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-<link href="css/pages.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link rel="shortcut icon" href="images/favi.png" type="image/x-icon">
-<link rel="icon" href="images/favi.png" type="image/x-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-</script>
+	<head>
+		<title>VRoom</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="images/favi.png" type="image/x-icon">
+		<link rel="icon" href="images/favi.png" type="image/x-icon">
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+	</head>
+		<body>
+		<div class="container">	
+			<div class="header">
+				<h1><a href="index.html">Catherine Nitta</a></h1>
+				<ul><li> About</li> </ul>
+				<!-- <li>EN | JPN</li> -->
+			</div>
+			<div class="page">
+				<h1>VRoom</h1>
+				<p>VRoom is a speculative virtual reality application which allows the user to experience a safe space whenever they need it, and which helps guide the user in becoming the person they wish to be.</p> 
+				<img src="images/vroom.png" alt="" id="centered">
+		
+				<p><b>THE PRODUCT</b><br />
+					VRoom is a VR application which uses <b>Brain Machine Interface (BMI)</b> in a speculative, "mind-reading" manner. The BMI, which would be part of the VR headset, reads in thoughts from the user, and generates questions tailored to the user. It would also allow for the user to imagine their <b>safe space</b> (the place where they feel the most safe/calm) and their <b>vision space</b> (their ideal life trajectory).</p><br/>
 
-<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-		<!-- Navigation script -->
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-		</script>
-</head>
-<body>
-	<h1>VRoom</h1>
-	<p>VRoom is a speculative virtual reality application which allows the user to experience a safe space whenever they need it, and which helps guide the user in becoming the person they wish to be.</p> 
-	<hr>
-	<img src="images/vroom.png" alt="" id="centered">
-	<br />
-	<hr>
-	<p><b>THE PRODUCT</b><br />
-		VRoom is a VR application which uses <b>Brain Machine Interface (BMI)</b> in a speculative, "mind-reading" manner. The BMI, which would be part of the VR headset, reads in thoughts from the user, and generates questions tailored to the user. It would also allow for the user to imagine their <b>safe space</b> (the place where they feel the most safe/calm) and their <b>vision space</b> (their ideal life trajectory).</p><br/>
+				<p><b>USER EXPERIENCE</b><br/>
+				 The user would have regular sessions with the device, and would follow a flow with the following stages: Vulnerability, Reflection, Clarity, and Vision. The user starts in an empty white room, and is guided through these stages.
 
-	<p><b>USER EXPERIENCE</b><br/>
-	 The user would have regular sessions with the device, and would follow a flow with the following stages: Vulnerability, Reflection, Clarity, and Vision. The user starts in an empty white room, and is guided through these stages.
-	 <hr>
-	 <ul><img src="images/start.png" alt="" id="centered"></ul><hr><br />
-	 <ul id="blist"><b>Vulnerability</b>: The user is prompted to think about a place that makes them happy. All the details they think of will be read by the BMI and based on this, the VR space will transform into their personalized safe space.</ul>
-	  <ul><img src="images/reflection.png" alt="" id="centered"></ul><hr>
-	 <ul id="blist"><b>Reflection</b>: The user is prompted to think about how they are feeling in their safe space, and to describe their feelings. Within the VR space, the user is guided by a genderless avatar that listens to the user and provides feedback. This avatar would likely be a real-life therapist, or perhaps AI of the future. </ul>
-	  <ul><img src="images/clarity.png" alt="" id="centered"></ul><hr>
-	 <ul id="blist"><b>Clarity</b>: The user is prompted through multiple thought-provoking questions to help the user gain better understanding of where they are and what they can do to reach their ideal self/life.</ul>
-	  <ul><img src="images/vision.png" alt="" id="centered"></ul><hr>
-	 <ul id="blist"><b>Vision</b>: The user realizes what they should do to achieve the change they want after going through several clarity sessions. From the information the VR device receives via BMI from the user, a vision space is created.</ul>
-	</p> <br/>
-	<p><b>RESEARCH PROCESS</b><br />
-	 	<ul id="blist"><b>1. Cultural Probe</b><br/>
-	  		How do people's pasts affect their present? This was the initial question we were interested in. We chose to interview one person each (4 people total) about key objects and memories from their childhoods. Across all interviewees, we found a common theme of <b>transitional objects</b> and <b>issues of confidence.</b> 
-	 	</ul>
-		<ul id="blist"><b>2. Directed Background Research</b><br/>
-			Why do people need transitional objects or memories? From interviewing 4 people, we found that although there were some common themes, it was hard to figure out the answer to our initial research question. So we each tried to research our own take on the common themes. I did research on guided image therapy. <br />
-			<b>Transitional Objects</b>: Objects that children carry around with them to comfort themselves in difficult or unusual times. <br />
-			<b>Guided Image Therapy</b>: A therapy method used to direct one's concentration into visualizing a place or situation where one feels the most comfortable. It is mainly used to reduce stress and influence one's own behavior towards the positive. <br />
-			<b>Law of Attraction</b>: The idea that we attract whatever we think about, both in the positive and negative sense. In the positive case, one is able to achieve success by believing that oneself can be successful. <br />
-	 	</ul>
-	 	<ul id="blist"><b>3. Ideation</b><br/>
-	  		Based on our individual research, we each came up with an idea for how to synthesize our findings into a product. My idea was this VR system, but only for creating a "safe space". After brainstorming, we decided to incorporate details of each person's research and ideas.  
-	 	</ul>
-	</p>
-	<br />
-
-		<!-- Footer -->
-		<div class="footer">
-			<div class="container">
-				<div class="footer-left">
-					<p>Copyright &copy; 2016-7 Catherine Nitta</p> <br>
-					<p><a href="index.html">Return to webpage</a> </p>
-				</div>
-				<script type="text/javascript">
-				$(document).ready(function() {
-					
-					$().UItoTop({ easingType: 'easeOutQuart' });
-					
-				});
-			</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				 <ul><img src="images/start.png" alt="" id="centered"></ul><br />
+				 <ul id="blist"><b>Vulnerability</b>: The user is prompted to think about a place that makes them happy. All the details they think of will be read by the BMI and based on this, the VR space will transform into their personalized safe space.</ul>
+				  <ul><img src="images/reflection.png" alt="" id="centered"></ul>
+				 <ul id="blist"><b>Reflection</b>: The user is prompted to think about how they are feeling in their safe space, and to describe their feelings. Within the VR space, the user is guided by a genderless avatar that listens to the user and provides feedback. This avatar would likely be a real-life therapist, or perhaps AI of the future. </ul>
+				  <ul><img src="images/clarity.png" alt="" id="centered"></ul>
+				 <ul id="blist"><b>Clarity</b>: The user is prompted through multiple thought-provoking questions to help the user gain better understanding of where they are and what they can do to reach their ideal self/life.</ul>
+				  <ul><img src="images/vision.png" alt="" id="centered"></ul>
+				 <ul id="blist"><b>Vision</b>: The user realizes what they should do to achieve the change they want after going through several clarity sessions. From the information the VR device receives via BMI from the user, a vision space is created.</ul>
+				</p> <br/>
+				<p><b>RESEARCH PROCESS</b><br />
+				 	<ul id="blist"><b>1. Cultural Probe</b><br/>
+				  		How do people's pasts affect their present? This was the initial question we were interested in. We chose to interview one person each (4 people total) about key objects and memories from their childhoods. Across all interviewees, we found a common theme of <b>transitional objects</b> and <b>issues of confidence.</b> 
+				 	</ul>
+					<ul id="blist"><b>2. Directed Background Research</b><br/>
+						Why do people need transitional objects or memories? From interviewing 4 people, we found that although there were some common themes, it was hard to figure out the answer to our initial research question. So we each tried to research our own take on the common themes. I did research on guided image therapy. <br />
+						<b>Transitional Objects</b>: Objects that children carry around with them to comfort themselves in difficult or unusual times. <br />
+						<b>Guided Image Therapy</b>: A therapy method used to direct one's concentration into visualizing a place or situation where one feels the most comfortable. It is mainly used to reduce stress and influence one's own behavior towards the positive. <br />
+						<b>Law of Attraction</b>: The idea that we attract whatever we think about, both in the positive and negative sense. In the positive case, one is able to achieve success by believing that oneself can be successful. <br />
+				 	</ul>
+				 	<ul id="blist"><b>3. Ideation</b><br/>
+				  		Based on our individual research, we each came up with an idea for how to synthesize our findings into a product. My idea was this VR system, but only for creating a "safe space". After brainstorming, we decided to incorporate details of each person's research and ideas.  
+				 	</ul>
+				</p>
+				<br />
 			</div>
 		</div>
 	</body>
