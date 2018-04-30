@@ -23,7 +23,7 @@
     letter-spacing: 1px;
     line-height: 1.5;
     word-spacing: 2px;
-    padding-left: 0.3375em
+    padding-left: 0.3375em;
 }
 .header ul {
     position: relative;
@@ -156,25 +156,78 @@ a:active {
     word-spacing: 1px;
     }
 
+/* About Page styles */
+
+.about {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 66.66667%;
+    float: left;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    font-weight:300;
+}
+
+.details h2{
+    font-family: "Oswald", sans-serif;
+    font-weight:500;
+    left: 8.33333%;
+    font-style:normal;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    padding-top:0px;
+}
+.details h3{
+    font-family: "Lato", sans-serif;
+    font-style:normal;
+    font-weight:300;
+    padding-left:0px;
+    /*left: 8.33333%;*/
+
+}
+
+.details {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 25%;
+    left: 8.33333%;
+    right: auto;
+    float: left;
+    font-family: "Lato", sans-serif;
+    font-weight:300;
+    font-style: italic;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    line-height: 24px;
+    list-style-type: none;
+}
+
 .icon {
-        text-decoration: none;
-        border-bottom: none;
-        position: relative;
-    }
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+    display:inline-block;
+}
 
-        .icon:before {
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            text-transform: none !important;
-        }
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
 
-        .icon > .label {
-            display: none;
-        }
+.icon > .label {
+    display: none;
+}
 
+
+/* more general page stuff */
 .caption {
 	font-size:12px;
 	text-align:center;
@@ -219,6 +272,18 @@ a:active {
     display:inline-block;
     width: 80%;
     padding:1%;
+}
+
+.footer {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    padding-bottom:20px;
 }
 
 /* Responsive Layouts */
