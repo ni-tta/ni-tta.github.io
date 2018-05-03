@@ -2,6 +2,8 @@
 .container {
     padding-left:5%;
     padding-right:5%;
+    margin:auto;
+    max-width: 95%;
 }
 
 
@@ -116,6 +118,9 @@ a:active {
 .page {
 	font-family: 'Lato', sans-serif;
 	line-height: 1.8;
+    margin:auto;
+    max-width: 95%;
+    
 }
 
 .page h1{
@@ -273,7 +278,7 @@ a:active {
     width: 80%;
     padding:1%;
 }
-
+/*
 .footer {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -285,7 +290,7 @@ a:active {
     text-align: center;
     padding-bottom:20px;
 }
-
+*/
 /* Responsive Layouts */
 @media (max-width: 932px){
     .column {
